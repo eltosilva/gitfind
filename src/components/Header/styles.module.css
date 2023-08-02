@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  
+  background-color: #2D333B;
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-family: 'Roboto', Arial;
+  font-weight: 700;
+}
