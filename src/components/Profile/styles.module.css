@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.photo {
+  width: 4rem;
+  border-radius: 3rem;
+  border: solid 1px #E5E5E5;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 400;
+}
+
