@@ -13,6 +13,7 @@ body {
   line-height: 0.625rem;
 }
 
-.border-bottom {
-  border-bottom: #E5E5E533;
+.line-bottom {
+  border-bottom: solid 1px #E5E5E533;
+  padding-bottom: 1rem;
 }

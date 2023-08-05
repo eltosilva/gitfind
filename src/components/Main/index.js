@@ -19,7 +19,7 @@ export default function Main() {
 
     if (user.name) {
       setCurrentUser(user)
-      const repositories = await fetch(`${URL_BASE}/${userName}/repos`).then(dados => dados.json())
+      const repositories = await fetchRepos(`${URL_BASE}/${userName}/repos`)
       setListRepos(repositories)
     }
   }
@@ -31,7 +31,7 @@ export default function Main() {
         {!!currentUser ? (
           <>
             <Profile {...currentUser} />
-            <List list={listRepos} />
+            {listRepos && <List list={listRepos} />}
           </>
         ) : null}
       </div>
@@ -46,6 +46,10 @@ async function fetchUser(url) {
 }
 
 async function fetchRepos(url) {
-  const { name, description, html_url } = await fetch(url).then(value => value.json())
-  return { name, description, html_url }
+  const listRepos = await fetch(url).then(value => value.json())
+  
+  return listRepos.map(repos => {
+    const { name, description, html_url } = repos
+    return { name, description, html_url }
+  })
 }
