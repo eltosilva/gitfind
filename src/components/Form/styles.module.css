@@ -4,3 +4,22 @@
   gap: 1rem;
   margin: 2.5rem 0;
 }
+
+.input {
+  height: 1.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  border: solid 1px #999999;
+  border-radius: 0.75rem;
+  background-color: transparent;
+  color: #999999;
+}
+
+.button {
+  height: 1.5rem;
+  background-color: #2D333B;
+  border: solid 1px #999999;
+  color: #999999;
+  border-radius: 0.75rem;
+  padding: 0 1.5rem;
+}
